@@ -8,7 +8,7 @@ export default function Footer() {
   document.getElementById("scrolltop")?.addEventListener("click", scrollToTop);
 
   return (
-    <div className="bg-slate-950 text-white min-h-[400px] pl-[20%]">
+    <div className="bg-slate-950 text-white min-h-[400px] pl-[20%] relative">
           <h2 className="font-semibold text-4xl pb-8">
             Available for freelance opportunities
           </h2>
@@ -43,6 +43,7 @@ export default function Footer() {
               jeanmaximegilbert@gmail.com
             </h2>
           </a>
-        </div>
+          <p className ="absolute bottom-0 right-0 p-4 text-slate-500">© 2024.</p>
+        </div>  
   );
 }

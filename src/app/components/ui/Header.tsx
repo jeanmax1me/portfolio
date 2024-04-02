@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Header() {
   const bounceOutEase = [0.2, 0.5, 1.1, 1];
   return (
-    <div className="h-20 bg-slate-950 text-slate-100 flex items-center pr-[20%]">
+    <div className="h-20 bg-sky-950 text-slate-100 flex items-center pr-[20%]">
       <h1 className="mr-auto"></h1>
       <div className="inline-flex space-x-16">
       <motion.a
@@ -13,12 +13,12 @@ export default function Header() {
           className="text-sky-200 hover:text-sky-400"
           rel="noreferrer"
           target="_blank"
-          initial={{ x: "calc(100vw - 6rem)" }} 
+          initial={{ y: -50 }} 
           animate={{
-            x: 0,
+            y: 0,
           }}
           transition={{
-            duration: 1, 
+            duration: 0.8, 
             repeat: 0, 
           }}
         >
@@ -37,12 +37,12 @@ export default function Header() {
           className="text-sky-200 hover:text-sky-400"
           rel="noreferrer"
           target="_blank"
-          initial={{ x: "calc(100vw - 6rem)" }} 
+          initial={{ y: -50 }} 
           animate={{
-            x: 0,
+            y: 0,
           }}
           transition={{
-            duration: 1, 
+            duration: 0.8, 
             repeat: 0, 
           }}
         >
@@ -61,12 +61,12 @@ export default function Header() {
           className="text-sky-200 hover:text-sky-400"
           rel="noreferrer"
           target="_blank"
-          initial={{ x: "calc(100vw - 6rem)" }} 
+          initial={{ y: -50 }} 
           animate={{
-            x: 0,
+            y: 0,
           }}
           transition={{
-            duration: 1, 
+            duration: 0.8, 
             repeat: 0, 
           }}
         >

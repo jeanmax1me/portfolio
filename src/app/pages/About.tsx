@@ -1,14 +1,26 @@
+"use client";
 import { Boxes } from "../components/ui/Background-boxes";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <div className="relative bg-slate-950 min-h-screen">
+    <div className="relative bg-slate-950 min-h-[800px]">
        <Boxes className="absolute" />
       <h1 className="text-6xl font-bold tracking-tight text-slate-200 sm:text-6xl py-2 text-center pb-48 underline-offset-8 underline decoration-sky-500">
         My Expertise
       </h1>
-      <div className="flex justify-between items-center px-32 pt-6 z-10">
-      <div className="flex gap-6  z-10">
+      <div className="flex justify-between items-center px-48 pt-6 z-10">
+      <motion.div 
+      className="flex gap-6  z-10"
+      initial={{ x: -100 }} 
+      animate={{
+        x: 0,
+      }}
+      transition={{
+        duration: 4, 
+        repeat: 0, 
+      }}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
@@ -26,14 +38,24 @@ export default function About() {
           <h3 className="text-2xl font-semibold pt-1">React, NextJS</h3>
           <p className="text-xl">Experienced in HTML, CSS, JS, React and NextJS frameworks.</p>
         </div>
-      </div>
-      <div className="flex gap-6  z-10">
+      </motion.div>
+      <motion.div 
+      className="flex gap-6  z-10"
+      initial={{ x: 100 }} 
+      animate={{
+        x: 0,
+      }}
+      transition={{
+        duration: 4, 
+        repeat: 0, 
+      }}
+      >
       <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"><path d="M18,34.111l-1.667,6.667L14.111,43H31.889l-2.222-2.222L28,34.111M3,25.222H43M7.444,34.111H38.556A4.444,4.444,0,0,0,43,29.667V7.444A4.444,4.444,0,0,0,38.556,3H7.444A4.444,4.444,0,0,0,3,7.444V29.667A4.444,4.444,0,0,0,7.444,34.111Z" transform="translate(-2 -2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
       <div className="flex flex-col text-slate-200">
           <h2 className="text-2xl font-semibold underline-offset-8 underline decoration-orange-500 decoration-4">Software Development</h2>
           <p className="text-xl pt-1">Experienced in functional programming: JavaScript, TypeScript.</p>
         </div>
-      </div>
+      </motion.div>
       </div>
     </div>
   );

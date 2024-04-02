@@ -10,9 +10,9 @@ export function LampDemo() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 1.2, ease: "easeInOut" }}
-        className="text-3xl font-bold tracking-tight text-slate-200 sm:text-4xl text-center leading-6"
+        className="text-3xl font-bold tracking-tight text-sky-200 sm:text-4xl text-center leading-6"
       >
-        Hi, I&apos;m Jean-Maxime Gilbert 
+        Hi, I&apos;m Jean-Maxime Gilbert, 
       </motion.h1>
       <motion.h1
         initial={{ opacity: 0 }}

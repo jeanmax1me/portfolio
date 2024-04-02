@@ -4,8 +4,8 @@ import { motion } from "framer-motion";
 import { cn } from "@/app/utils/cn";
 
 export const BoxesCore = ({ className, ...rest }: { className?: string }) => {
-  const rows = new Array(30).fill(1);
-  const cols = new Array(25).fill(1);
+  const rows = new Array(16).fill(1);
+  const cols = new Array(10).fill(1);
   let colors = [
     "--sky-300",
     "--pink-300",

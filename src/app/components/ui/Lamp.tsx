@@ -12,7 +12,7 @@ export function LampDemo() {
         transition={{ delay: 0.3, duration: 1.2, ease: "easeInOut" }}
         className="text-3xl font-bold tracking-tight text-sky-200 sm:text-4xl text-center leading-6"
       >
-        Hi, I&apos;m Jean-Maxime Gilbert, 
+        Hi, I&apos;m Jean-Maxime, 
       </motion.h1>
       <motion.h1
         initial={{ opacity: 0 }}
@@ -20,7 +20,7 @@ export function LampDemo() {
         transition={{ delay: 0.3, duration: 1.5, ease: "easeInOut" }}
         className=" pt-4 text-2xl font-bold tracking-tight text-slate-300 sm:text-3xl text-center leading-6"
       >
-       Front-end & App Developer.
+      nice to meet you.
       </motion.h1>
       <motion.h1
         initial={{ opacity: 0.5, y: 100 }}
@@ -32,8 +32,8 @@ export function LampDemo() {
         }}
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-xl font-medium tracking-tight text-transparent md:text-2xl"
       >
-        I love building user-friendly and engaging interfaces with React and
-        Next.js.
+        I love building user-friendly and engaging interfaces tailored to your needs.
+
       </motion.h1>
     </LampContainer>
   );

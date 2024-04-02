@@ -3,7 +3,7 @@ import About from "./pages/About";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="max-w-full">
       <Hero />
       <About />
     </div>

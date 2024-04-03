@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { TextGenerateEffect } from "@/app/components/ui/Text-anim";
 
+
 const words = `JavaScript React Development graduate. My interest in web development sparked in 2020 when stuck at home, where I discovered a passion for programming. 
 
 Since then, I've gained valuable experience through studying, personal projects and freelance work, focusing on building web applications that prioritize functionality. This hands-on experience has allowed me to refine my skills and deepen my understanding of various technologies. 
@@ -67,7 +68,7 @@ export default function About() {
         </div>
       </motion.div>
       </div>
-      <div className="max-w-7xl mx-auto pt-32">
+      <div className="max-w-7xl mx-auto pt-[14rem]">
         <TextGenerateEffectDemo />
         </div>
     </div>

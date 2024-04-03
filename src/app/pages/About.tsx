@@ -1,11 +1,21 @@
 "use client";
-import { Boxes } from "../components/ui/Background-boxes";
 import { motion } from "framer-motion";
+import { TextGenerateEffect } from "@/app/components/ui/Text-anim";
+
+const words = `JavaScript React Development graduate. My interest in web development sparked in 2020 when stuck at home, where I discovered a passion for programming. 
+
+Since then, I've gained valuable experience through studying, personal projects and freelance work, focusing on building web applications that prioritize functionality. This hands-on experience has allowed me to refine my skills and deepen my understanding of various technologies. 
+
+Continuously seeking to enhance my skills, I work on personal projects using a range of technologies. These projects not only serve as a creative outlet but also as a means to stay up-to-date with the latest trends and tools in web development. 
+`;
+
+export function TextGenerateEffectDemo() {
+  return <TextGenerateEffect words={words} />;
+}
 
 export default function About() {
   return (
     <div className="relative bg-slate-950 min-h-[800px]">
-       <Boxes className="absolute" />
       <h1 className="text-6xl font-bold tracking-tight text-slate-200 sm:text-6xl py-2 text-center pb-48 underline-offset-8 underline decoration-sky-500">
         My Expertise
       </h1>
@@ -50,13 +60,16 @@ export default function About() {
         repeat: 0, 
       }}
       >
-      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"><path d="M18,34.111l-1.667,6.667L14.111,43H31.889l-2.222-2.222L28,34.111M3,25.222H43M7.444,34.111H38.556A4.444,4.444,0,0,0,43,29.667V7.444A4.444,4.444,0,0,0,38.556,3H7.444A4.444,4.444,0,0,0,3,7.444V29.667A4.444,4.444,0,0,0,7.444,34.111Z" transform="translate(-2 -2)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"><path d="M18,34.111l-1.667,6.667L14.111,43H31.889l-2.222-2.222L28,34.111M3,25.222H43M7.444,34.111H38.556A4.444,4.444,0,0,0,43,29.667V7.444A4.444,4.444,0,0,0,38.556,3H7.444A4.444,4.444,0,0,0,3,7.444V29.667A4.444,4.444,0,0,0,7.444,34.111Z" transform="translate(-2 -2)" fill="none" stroke="#fff"></path></svg>
       <div className="flex flex-col text-slate-200">
           <h2 className="text-2xl font-semibold underline-offset-8 underline decoration-orange-500 decoration-4">Software Development</h2>
           <p className="text-xl pt-1">Experienced in functional programming: JavaScript, TypeScript.</p>
         </div>
       </motion.div>
       </div>
+      <div className="max-w-7xl mx-auto pt-32">
+        <TextGenerateEffectDemo />
+        </div>
     </div>
   );
 }

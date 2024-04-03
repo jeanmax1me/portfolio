@@ -13,7 +13,11 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'fgreen' : 'rgb(157, 255, 202)',
+      }
+    },
   },
   plugins: [addVariablesForColors],
 };

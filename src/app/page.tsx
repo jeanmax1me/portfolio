@@ -9,8 +9,8 @@ export default function Home() {
     <div className="max-w-full">
       <Hero />
       <About />
-      <WavyTransition />
       <Work />
+      <WavyTransition />
       <Footer />
     </div>
   );

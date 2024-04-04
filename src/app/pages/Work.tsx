@@ -1,9 +1,4 @@
 "use client";
-import Image from "next/image";
-import React from "react";
-import { CardBody, CardContainer, CardItem } from "@/app/components/ui/3d-card";
-import Link from "next/link";
-import lespetitsplats from "@/app/images/les_petits_plats.jpg";
 import Booki from "../components/cards/booki";
 import Fisheye from "../components/cards/fisheye";
 import Kasa from "../components/cards/kasa";
@@ -21,7 +16,7 @@ export default function ThreeDCardDemo() {
       <h1 className="text-6xl font-bold tracking-tight text-slate-200 sm:text-6xl py-2 text-center pb-48 underline-offset-8 underline decoration-sky-500">
         Drafts
       </h1>
-      <div className="flex flex-wrap gap-16 px-8 items-center justify-center">
+      <div className="flex flex-wrap gap-14 px-8 justify-center">
         <Zephyra />
         <Booki />
         <Fisheye />

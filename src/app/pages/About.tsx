@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { TextGenerateEffect } from "@/app/components/ui/Text-anim";
 
 
-const words = `JavaScript React Development graduate. My interest in web development sparked in 2020 when stuck at home, where I discovered a passion for programming. 
+const words = `JavaScript React Development graduate. My interest in web development sparked in 2020 when stuck at home, where I discovered a passion for programming.
 
 Since then, I've gained valuable experience through studying, personal projects and freelance work, focusing on building web applications that prioritize functionality. This hands-on experience has allowed me to refine my skills and deepen my understanding of various technologies. 
 
@@ -23,15 +23,20 @@ export default function About() {
       <div className="flex justify-between items-center px-48 pt-6 z-10">
       <motion.div 
       className="flex gap-6  z-10"
-      initial={{ x: -100 }} 
-      animate={{
-        x: 0,
+      initial={{
+        opacity: 0,
+        // if odd index card,slide from right instead of left
+        x: -50
       }}
-      transition={{
-        duration: 4, 
-        repeat: 0, 
+      whileInView={{
+        opacity: 1,
+        x: 0, // Slide in to its original position
+        transition: {
+          duration: 1 // Animation duration
+        }
       }}
-      >
+      viewport={{ once: true }}
+    >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="40"
@@ -52,15 +57,20 @@ export default function About() {
       </motion.div>
       <motion.div 
       className="flex gap-6  z-10"
-      initial={{ x: 100 }} 
-      animate={{
-        x: 0,
+      initial={{
+        opacity: 0,
+        // if odd index card,slide from right instead of left
+        x: 50
       }}
-      transition={{
-        duration: 4, 
-        repeat: 0, 
+      whileInView={{
+        opacity: 1,
+        x: 0, // Slide in to its original position
+        transition: {
+          duration: 1 // Animation duration
+        }
       }}
-      >
+      viewport={{ once: true }}
+    >
       <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42"><path d="M18,34.111l-1.667,6.667L14.111,43H31.889l-2.222-2.222L28,34.111M3,25.222H43M7.444,34.111H38.556A4.444,4.444,0,0,0,43,29.667V7.444A4.444,4.444,0,0,0,38.556,3H7.444A4.444,4.444,0,0,0,3,7.444V29.667A4.444,4.444,0,0,0,7.444,34.111Z" transform="translate(-2 -2)" fill="none" stroke="#fff"></path></svg>
       <div className="flex flex-col text-slate-200">
           <h2 className="text-2xl font-semibold underline-offset-8 underline decoration-orange-500 decoration-4">Software Development</h2>

@@ -16,6 +16,7 @@ module.exports = {
     extend: {
       colors: {
         'fgreen' : 'rgb(157, 255, 202)',
+        'bget' : 'rgb(244, 245, 247)',
       }
     },
   },

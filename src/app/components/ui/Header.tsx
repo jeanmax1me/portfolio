@@ -6,7 +6,7 @@ export default function Header() {
   const bounceOutEase = [0.2, 0.5, 1.1, 1];
   return (
     <div className="h-20 bg-gradient-to-b from-sky-950 to-slate-950 text-slate-100 flex items-center pr-[20%]">
-      <div className="pl-8 mr-auto"> &lt;Jeanmax1me /&gt;  <br /> Front-end developer
+      <div className="pl-8 mr-auto text-bget"> &lt;Jeanmax1me /&gt;  <br /> Front-end developer
       </div>
       <div className="inline-flex space-x-16">
       <motion.a

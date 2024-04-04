@@ -78,7 +78,7 @@ export default function About() {
         </div>
       </motion.div>
       </div>
-      <div className="max-w-7xl mx-auto pt-[14rem]">
+      <div className="max-w-5xl mx-auto pt-[14rem]">
         <TextGenerateEffectDemo />
         </div>
     </div>

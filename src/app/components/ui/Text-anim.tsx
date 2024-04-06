@@ -33,7 +33,7 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className="text-sky-200 italic opacity-0 tracking-widest leading-6"
+              className="text-sky-400 italic opacity-0 tracking-widest leading-6"
             >
               {word}{" "}
             </motion.span>

@@ -10,7 +10,7 @@ export function LampDemo() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 1.2, ease: "easeInOut" }}
-        className="text-3xl font-bold tracking-tight text-sky-200 sm:text-4xl text-center leading-6"
+        className="text-3xl font-bold tracking-tight text-sky-300 sm:text-4xl text-center leading-6"
       >
         Hi, I&apos;m Jean-Maxime, 
       </motion.h1>
@@ -18,7 +18,7 @@ export function LampDemo() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 1.5, ease: "easeInOut" }}
-        className=" pt-4 text-2xl font-bold tracking-tight text-slate-300 sm:text-3xl text-center leading-6"
+        className=" pt-4 text-2xl font-bold tracking-tight text-sky-300 sm:text-3xl text-center leading-6"
       >
       nice to meet you.
       </motion.h1>
@@ -30,7 +30,7 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-xl font-medium tracking-tight text-transparent md:text-2xl"
+        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-xl font-normal tracking-tight md:text-2xl text-sky-300"
       >
         I love building user-friendly and engaging interfaces tailored to your needs.
 
